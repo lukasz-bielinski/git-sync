@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: git-sync
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: git-sync
+    spec:
+      containers:
+      - name: git-sync
+        image: lukaszbielinski/git-sync:0.1
+        env:
+        - name: GIT_SYNC_REPO
+          value: https://github.com/lukasz-bielinski/test
+        - name: GIT_SYNC_WAIT
+          value: "50"
