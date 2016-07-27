@@ -9,4 +9,4 @@ EOF
 
 chmod 400 ~/.ssh/klucze/id-rsa
 
-bash /git-sync
+/git-sync
