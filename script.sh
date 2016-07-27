@@ -3,10 +3,10 @@
 mkdir -p ~/.ssh/klucze
 cat > ~/.ssh/config <<EOF
 Host bitbucket.org
-  IdentityFile ~/.ssh/klucze/id_rsa
+  IdentityFile ~/.ssh/klucze/id-rsa
 EOF
 
 
-chmod 400 ~/.ssh/klucze/id_rsa
+chmod 400 ~/.ssh/klucze/id-rsa
 
 bash /git-sync
