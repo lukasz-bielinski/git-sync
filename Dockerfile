@@ -11,6 +11,7 @@ RUN apt-get update && \
 COPY git-sync /git-sync
 ADD script.sh script.sh
 RUN chmod +x script.sh
+RUN chmod +x /git-sync
 
 RUN mkdir /nonexistent && chmod 777 /nonexistent
 
