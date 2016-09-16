@@ -4,6 +4,8 @@ mkdir -p ~/.ssh/klucze
 cat > ~/.ssh/config <<EOF
 Host bitbucket.org
   IdentityFile ~/.ssh/klucze/id-rsa
+Host bitbucket.otlabs.fr
+  IdentityFile ~/.ssh/klucze/id-rsa  
 EOF
 
 
