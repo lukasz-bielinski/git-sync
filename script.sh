@@ -6,8 +6,8 @@ Host bitbucket.org
   IdentityFile ~/.ssh/klucze/id-rsa
 Host bitbucket.otlabs.fr
   IdentityFile ~/.ssh/klucze/id-rsa
-  Host github.com
-    IdentityFile ~/.ssh/klucze/id-rsa
+Host github.com
+  IdentityFile ~/.ssh/klucze/id-rsa
 EOF
 
 
