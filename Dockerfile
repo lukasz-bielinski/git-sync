@@ -1,4 +1,4 @@
-FROM gcr.io/google_containers/ubuntu-slim:0.1
+FROM ubuntu:16.10
 
 ENV GIT_SYNC_DEST /git
 VOLUME ["/git"]
